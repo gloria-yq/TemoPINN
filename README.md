@@ -28,6 +28,7 @@ TempoPINN/
 ├── main.py           # Main training and evaluation entry
 └── README.md
 
+```
 ## Requirements
 The code is implemented in Python and PyTorch.
 
