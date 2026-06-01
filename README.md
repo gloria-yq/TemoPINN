@@ -7,15 +7,20 @@ This repository provides the core implementation of TempoPINN, including model d
 
 ## Overview
 
-TempoPINN is designed for multivariate weather time series forecasting at a fixed spatial location. Given a historical observation window, the model predicts future 2-meter temperature at a specified forecast horizon.
-
-The framework contains three main components:
-
-- **State Predictor**: estimates the future temperature conditioned on the forecast horizon.
-- **Dynamics Operator**: learns an implicit temporal evolution relation and regularizes forecast changes.
-- **Annual Periodic Consistency**: introduces seasonal-scale regularization for meteorological time series.
-
-Both the State Predictor and Dynamics Operator are implemented with a Cross-Time Transformer module, which combines temporal self-attention with cross-time feed-forward transformation.
+Physics-informed learning has shown effectiveness in weather
+forecasting. Many existing methods rely on explicit governing equations
+to enforce physical consistency. However, atmospheric variables in weather
+systems are highly coupled, and their changes over time are difficult to
+describe with explicit equations. To address this challenge, we propose
+TempoPINN, a physics-informed framework for temperature forecasting at
+fixed locations. We introduce State Predictor and Dynamics Operator as
+two modules of TempoPINN. The former estimates future temperatures,
+while the latter regularizes forecast changes without explicit atmospheric
+equations. Both modules are implemented with a cross-time transformer.
+Additionally, we introduce annual periodic consistency to capture seasonal
+scale variations. Extensive experiments on WeatherBench temperature
+time series show that TempoPINN outperforms representative neural
+forecasting baselines in temperature forecasting.
 
 ## Repository Structure
 
