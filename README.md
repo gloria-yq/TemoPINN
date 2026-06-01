@@ -34,10 +34,10 @@ The code is implemented in Python and PyTorch.
 
 Recommended environment:
 
-python >= 3.8
-torch
-numpy
-pandas
-scikit-learn
-matplotlib
+python >= 3.8 \
+torch\
+numpy\
+pandas\
+scikit-learn\
+matplotlib\
 Install dependencies manually according to your local CUDA/PyTorch environment.
