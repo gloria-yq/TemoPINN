@@ -52,4 +52,5 @@ Run TempoPINN with:\
 python main.py \
   --data_path path/to/weather_data.csv \
   --model model/to/test\
+  --other parameters
 
