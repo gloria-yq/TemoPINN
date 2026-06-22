@@ -46,3 +46,10 @@ pandas\
 scikit-learn\
 matplotlib\
 Install dependencies manually according to your local CUDA/PyTorch environment.
+
+## Usage
+Run TempoPINN with:
+python main.py \
+  --data_path path/to/weather_data.csv \
+  --model model/to/test\
+
